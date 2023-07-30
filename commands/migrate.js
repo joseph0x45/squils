@@ -7,7 +7,7 @@ export async function migrate() {
       const db_url = process.env.DB_URL ?? ""
       if(db_url===""){
         console.log('Database URI not found in environment')
-        //Add some help message here
+        console.log('Export the DB_URL in the local environment or use a .env file at the root of the folder where you are running squils')
         return
       }
       files.map(file_name => {

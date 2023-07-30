@@ -22,6 +22,7 @@ if (
     }
     case "connect":{
       await connect()
+      process.exit()
     }
   }
 }
