@@ -1,16 +1,27 @@
 {
-  "name": "deebee",
-  "version": "1.0.0",
-  "description": "",
-  "type":"module",
-  "bin":"./index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": ["postgres", "db utils", "database", "migrations"],
-  "author": "TheWisePigeon < https://github.com/TheWisePigeon >",
-  "license": "ISC",
-  "dependencies": {
-    "postgres": "^3.3.5"
-  }
+    "name": "deebee",
+    "version": "1.0.0",
+    "description": "Database utilities",
+    "bin": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "deploy":" npm run build && npm publish ",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TheWisePigeon/deebee.git"
+    },
+    "author": "TheWisePigeon <pigeondev01@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/TheWisePigeon/deebee/issues"
+    },
+    "homepage": "https://github.com/TheWisePigeon/deebee#readme",
+    "devDependencies": {
+        "typescript": "^5.1.6"
+    },
+    "dependencies": {
+        "postgres": "^3.3.5"
+    }
 }
