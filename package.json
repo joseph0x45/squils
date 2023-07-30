@@ -1,6 +1,6 @@
 {
   "name": "squils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Database utilities",
   "bin": "dist/index.js",
   "type": "module",
