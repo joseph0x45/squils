@@ -2,7 +2,7 @@
   "name": "squils",
   "version": "0.0.4",
   "description": "Database utilities",
-  "bin": "dist/index.js",
+  "bin": "index.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
