@@ -1,0 +1,16 @@
+{
+  "name": "deebee",
+  "version": "1.0.0",
+  "description": "",
+  "type":"module",
+  "bin":"./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["postgres", "db utils", "database", "migrations"],
+  "author": "TheWisePigeon < https://github.com/TheWisePigeon >",
+  "license": "ISC",
+  "dependencies": {
+    "postgres": "^3.3.5"
+  }
+}
