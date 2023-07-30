@@ -3,6 +3,9 @@
 import { migrate } from "./commands/migrate.js";
 import { connect } from "./commands/connect.js";
 import { command_is_valid } from "./utils.js";
+import * as dotenv from "dotenv"
+
+dotenv.config()
 
 const [_,__, command, ...args] = process.argv
 
@@ -11,7 +14,7 @@ if (
 ) {
   switch (command) {
     case "migrate": {
-      migrate()
+      await migrate()
       process.exit()
     }
     case "init":{
@@ -23,4 +26,4 @@ if (
   }
 }
 console.log(`Invalid command ${command}`)
-process.exit(1)
+process.exit()

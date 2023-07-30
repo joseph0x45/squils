@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Database utilities",
   "bin": "dist/index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "deploy": " npm run build && npm publish ",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/TheWisePigeon/deebee#readme",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "postgres": "^3.3.5"
   }
 }
