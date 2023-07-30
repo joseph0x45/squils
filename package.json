@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheWisePigeon/deebee.git"
+    "url": "git+https://github.com/TheWisePigeon/squils.git"
   },
   "author": "TheWisePigeon <pigeondev01@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TheWisePigeon/deebee/issues"
+    "url": "https://github.com/TheWisePigeon/squils/issues"
   },
-  "homepage": "https://github.com/TheWisePigeon/deebee#readme",
+  "homepage": "https://github.com/TheWisePigeon/squils#README",
   "dependencies": {
     "dotenv": "^16.3.1",
     "postgres": "^3.3.5"
