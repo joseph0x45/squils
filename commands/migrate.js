@@ -17,7 +17,7 @@ export async function migrate() {
       }
       for (let i = 0; i < files.length; i++) {
         const file_name = files[i];
-        const sql = postgres(db_url)
+        const sql = postgres(db_url, { ssl:"require" })
         console.log(`Running transaction ${file_name.substring(file_name.indexOf('_') + 1)}...`)
         await sql.begin(async sql => {
           await sql.file(`./migrations/${file_name}`)
