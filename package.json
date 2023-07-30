@@ -1,5 +1,5 @@
 {
-  "name": "deebee",
+  "name": "squils",
   "version": "0.0.1",
   "description": "Database utilities",
   "bin": "dist/index.js",
