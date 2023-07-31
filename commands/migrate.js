@@ -10,6 +10,7 @@ export async function migrate() {
         process.exit(0)
       }
       const db_url = process.env.DB_URL ?? ""
+      const config = db_url.includes('@localhost:5433')? {} : { ssl:"require" }
       if (db_url === "") {
         console.log('Database URI not found in environment')
         console.log('Export the DB_URL in the local environment or use a .env file at the root of the folder where you are running squils')
@@ -17,7 +18,7 @@ export async function migrate() {
       }
       for (let i = 0; i < files.length; i++) {
         const file_name = files[i];
-        const sql = postgres(db_url, { ssl:"require" })
+        const sql = postgres(db_url, config)
         console.log(`Running transaction ${file_name.substring(file_name.indexOf('_') + 1)}...`)
         await sql.begin(async sql => {
           await sql.file(`./migrations/${file_name}`)
